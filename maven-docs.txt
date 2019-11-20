@@ -1,0 +1,44 @@
+Central Repository : 	www.mvn.org
+
+
+1) create project in interactive mode
+
+	c:> mvn archetype:generate
+
+2) importing project to eclipse
+
+	mvn eclipse:eclipse 
+	this command makes your project eclipse compatible.
+	
+	mvn eclipse:eclipse -Dwtpversion=2.0 (for web application/war)
+
+
+3)
+
+	mvn 	validate
+	mvn	compile
+	mvn	test
+	mvn 	package
+	
+	mvn	-version
+	mvn	clean
+	mvn	compile
+	mvn	test
+	mvn 	test-compile
+
+4) mvn archetype:generate 
+-DgroupId = com.companyname.automobile 
+-DartifactId = trucks
+-DarchetypeArtifactId = maven-archetype-webapp 
+-DinteractiveMode = false
+
+5) archetype-catelogue url
+
+http://repo1.maven.org/maven2/archetype-catalog.xml
+
+
+6) to download dependencies
+
+mvn dependency:copy-dependencies
+21
+
